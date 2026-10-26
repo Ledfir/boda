@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paleta editorial romántica: marfil, champagne, dorado, salvia y gris oscuro */
+    --background: 38 44% 96%;        /* #FAF7F2 marfil */
+    --foreground: 51 7% 21%;         /* #393832 gris oscuro */
+    --card: 0 0% 100%;               /* #FFFFFF blanco cálido */
+    --card-foreground: 51 7% 21%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 51 7% 21%;
+    --primary: 38 34% 56%;           /* #B59A6A dorado elegante */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 41% 85%;         /* #E8DCC8 champagne */
+    --secondary-foreground: 51 7% 21%;
+    --muted: 38 30% 93%;
+    --muted-foreground: 45 6% 38%;
+    --accent: 80 11% 63%;            /* #A3AA95 verde salvia */
+    --accent-foreground: 51 7% 18%;
+    --destructive: 0 52% 44%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 38 30% 84%;
+    --input: 38 25% 88%;
+    --ring: 38 34% 56%;
+    --chart-1: 38 34% 56%;
+    --chart-2: 80 11% 55%;
+    --chart-3: 38 41% 74%;
+    --chart-4: 51 7% 38%;
+    --chart-5: 30 25% 66%;
+    --radius: 0.375rem;
+    --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+    --font-body: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Great Vibes', 'Cormorant Garamond', cursive;
+    --font-accent: 'Cormorant Garamond', ui-serif, Georgia, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 38 44% 96%;
+    --sidebar-foreground: 51 7% 21%;
+    --sidebar-primary: 38 34% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 38 30% 93%;
+    --sidebar-accent-foreground: 51 7% 21%;
+    --sidebar-border: 38 30% 84%;
+    --sidebar-ring: 38 34% 56%;
+  }
+
+  .dark {
+    --background: 51 7% 13%;
+    --foreground: 38 44% 96%;
+    --card: 51 7% 17%;
+    --card-foreground: 38 44% 96%;
+    --popover: 51 7% 17%;
+    --popover-foreground: 38 44% 96%;
+    --primary: 38 34% 62%;
+    --primary-foreground: 51 7% 13%;
+    --secondary: 51 7% 22%;
+    --secondary-foreground: 38 44% 96%;
+    --muted: 51 7% 21%;
+    --muted-foreground: 38 15% 78%;
+    --accent: 80 12% 58%;
+    --accent-foreground: 51 7% 13%;
+    --destructive: 0 45% 42%;
+    --destructive-foreground: 38 44% 96%;
+    --border: 51 7% 26%;
+    --input: 51 7% 26%;
+    --ring: 38 34% 62%;
+    --sidebar-background: 51 7% 15%;
+    --sidebar-foreground: 38 44% 96%;
+    --sidebar-primary: 38 34% 62%;
+    --sidebar-primary-foreground: 51 7% 13%;
+    --sidebar-accent: 51 7% 21%;
+    --sidebar-accent-foreground: 38 44% 96%;
+    --sidebar-border: 51 7% 26%;
+    --sidebar-ring: 38 34% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background: hsl(var(--secondary));
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  /* Detalles tipográficos de la invitación */
+  .tracking-luxe {
+    letter-spacing: 0.3em;
+  }
+
+  .tracking-wide-luxe {
+    letter-spacing: 0.18em;
+  }
+
+  .text-balance-luxe {
+    text-wrap: balance;
+  }
+
+  .glass-ivory {
+    background-color: hsl(var(--card) / 0.82);
+    backdrop-filter: blur(14px);
+  }
+}
