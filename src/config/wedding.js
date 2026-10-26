@@ -13,7 +13,7 @@
 const MEDIA = 'https://media.base44.com/images/public/6adecd4b90cf5b2f755200fd';
 
 export const IMAGES = {
-  hero: `${MEDIA}/40bf6c387_generated_image.png`,
+  hero: `/images/hero.jpg`,
   ceremony: `${MEDIA}/1d4b54769_generated_image.png`,
   reception: `${MEDIA}/04552e4fd_generated_image.png`,
   storyOne: `${MEDIA}/014ea7611_generated_image.png`,
@@ -31,21 +31,21 @@ export const IMAGES = {
 
 export const weddingConfig = {
   /** Identificador de la invitación: agrupa confirmaciones, dedicatorias y fotos. */
-  invitacionId: 'valeria-y-andres-2027',
+  invitacionId: 'maria-y-angel-2027',
 
   couple: {
-    bride: { name: 'Valeria', fullName: 'Valeria Herrera' },
-    groom: { name: 'Andrés', fullName: 'Andrés Villalobos' },
-    initials: 'V & A',
-    display: 'Valeria & Andrés',
+    bride: { name: 'Maria', fullName: 'Maria Picazo' },
+    groom: { name: 'Angel', fullName: 'Angel Flores' },
+    initials: 'M & A',
+    display: 'Maria & Angel',
   },
 
   /** Fecha, hora y zona horaria del evento. */
   date: {
-    iso: '2027-05-15T17:00:00-06:00',
+    iso: '2027-11-21T17:00:00-06:00',
     timeZone: 'America/Monterrey',
-    displayLong: 'Sábado 15 de mayo de 2027',
-    displayShort: '15 · 05 · 2027',
+    displayLong: 'Domingo 21 de Noviembre de 2027',
+    displayShort: '21 · 11 · 2027',
     time: '5:00 PM',
     city: 'Monterrey, Nuevo León',
   },
@@ -61,9 +61,9 @@ export const weddingConfig = {
 
   /** Música ambiental. Deja `src` vacío hasta tener el MP3 definitivo. */
   music: {
-    src: '',
-    title: '',
-    artist: '',
+    src: '/music/perfect.mp3',
+    title: 'Perfect (Wedding Version) | VIOLIN & PIANO Cover feat. Pachelbels CANON',
+    artist: 'Paul Hankinson Covers',
     initialVolume: 0.35,
   },
 
